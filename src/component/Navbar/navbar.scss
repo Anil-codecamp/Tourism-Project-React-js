@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navBarSection{
+    .header{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+        width: 100%;
+        padding: 1rem;
+        z-index: 1000;
+
+
+
+        .logoDiv{
+            .logo{
+                color:hsl(58, 88%, 44%);
+                font-weight: 500;
+                cursor: pointer;
+                align-items: center;
+                justify-content: center;
+
+                h1{
+                    color: aqua;
+                    font-size: 2rem;
+                }
+
+                .icon{
+                    color:rgb(255, 119, 0);
+                    font-size: 25px;
+                    margin-right: 0.6rem;
+
+                    
+                
+
+                }
+            }
+
+            
+        }
+
+        @media screen and (max-width: 768px) {
+            .navBar{
+                background-color:rgb(241, 237, 237);
+                position: absolute;
+                height: max-content;
+                padding: 1rem;
+                width: 100%;
+                top: 0;
+                left: -500%;
+                box-shadow: 0 2px 4px rgba(209, 212,220,2);
+
+                .navLists{
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 100%;
+                    margin: auto;
+
+
+                    .navItem{
+                        padding: 1rem 0;
+
+                        
+                        .navLink{
+                            color: #0e0404;
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            &:hover{
+                                color: rgb(214, 34, 10);
+                        
+                                                
+                            }
+
+
+                        }
+            
+                    }
+
+                    .headerBtns{
+                        flex-direction: column;
+                        .btn{
+                            margin-top: 1rem;
+                            right: 2rem;
+                            a{
+                                font-weight: 600;
+                                color: red;
+                                
+                               
+
+                            }
+
+                        }
+                        .loginBtn{
+                            background: none;
+                            border: 1px solid red;
+
+                        }
+                        .signup{
+                            background: orange;
+                            a{
+                                color: #fff;
+                                font-weight: 600;
+                            }
+                        }
+                        
+                    }
+
+                }
+
+                .closeNavbar{
+                    position:absolute;
+                    top: 1rem;
+                    right: 7rem;
+
+                    
+                    
+                    
+                }
+                
+                
+
+
+            }
+            .toggleNavbar{
+                position: fixed;
+                top: 1rem;
+                right: 1rem;
+
+                
+
+            }
+    
+            .activeNavbar{
+                left: 0rem;
+                   
+            }
+            
+            
+            
+        }
+        .toggleNavbar{
+            .icon{
+                font-size: 1.5rem;
+                color: #fff;
+
+            }
+        }
+    }
+
+    .activeHeader{
+        background-color: #531787;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .navBarSection{
+    .toggleNavbar,.closeNavbar{
+        display: none;
+    }
+    .header{
+        padding: 0.5rem 3rem;
+        .navBar{
+            .navLists{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                color: #fff;
+
+                .navItem{
+                    .navLink{
+                        color: #fff;
+                        padding: 0 .45rem;
+                        font-size: 1rem;
+                        font-weight: 500;
+
+                        &:hover{
+                            color: rgb(255, 123, 0);
+                        }
+            
+                    }
+                }
+                .btn{
+                    margin-left: 1rem;
+                    
+                    background-color:rgb(255, 123, 0) ;
+                    
+                   
+                }
+                .loginBtn{
+                    background: none;
+                    border: 1px solid rgb(212, 13, 13);
+                    
+
+                    &:hover{
+                        background:rgb(255, 123, 0) ;
+                        a{
+                            color: #fff;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            
+            }
+        }
+    }
+
+}
+}
+
+@media screen and (min-width: 960px){
+    .header{
+        .navBar{
+            .navLists{
+                .navItem{
+                    padding: 0.7rem;
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .header{
+        .navBar{
+            .navLists{
+                .navItem{
+                    padding:1rem;                  
+
+                }
+            }
+        }
+    }
+}
+
+
+
+//loginSignup
+
+// .main{
+//     width: 350px;
+//     height: 500px;
+//     background: rgb(160, 149, 149);
+//     overflow: hidden;
+//     border-radius: 10px;
+//     box-shadow: 5px 10px 30px #e1e0e0;
+   
+    
+//   }

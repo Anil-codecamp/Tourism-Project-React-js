@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.select {
+    text-align: center;
+    margin-top:7rem;
+
+    h2 {
+        color: red;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom:.7rem;
+
+    }
+
+    h1 {
+
+        font-size: 2.5rem;
+        font-weight: 600;
+
+
+    }
+}
+
+
+.slider-container {
+    padding: 1rem 0;
+    height: 100vh;
+    top: 4rem;
+    position: relative;
+    margin: 15px 90px;
+    margin-top: 1rem;
+
+
+
+    .myDestination {
+        overflow: hidden;
+        // border-radius: 4px;
+        border: 1px solid rgb(169, 166, 166);
+        // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     
+      
+
+
+        .destImage {
+            height: 400px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+
+
+            }
+
+            .overlayInfo {
+                position: absolute;
+                display: flex;
+                align-items: flex-start;
+
+                padding: 0;
+
+                justify-content: center;
+                flex-direction: column;
+
+                bottom: 0;
+                z-index: 999;
+                background: #060505;
+                opacity: 0.8;
+                width: 100%;
+
+                height: 0;
+                overflow: hidden;
+
+                h3 {
+                    color: #fff;
+                    font-weight: 800;
+
+
+                }
+
+                p {
+                    color: #fff;
+                    opacity: .9;
+                    font-size: 13px;
+
+                }
+
+                .icon {
+                    position: absolute;
+                    right: 60px;
+                    background: rgb(255, 119, 0);
+                    bottom: 10px;
+                    font-size: 2rem;
+                    border-radius: 50%;
+                    color: #fff;
+                    border: 1px solid rgb(163, 159, 159);
+                    transition: .3 ease;
+
+                    &:hover {
+                        background-color: #4d4b4b;
+                        color: #fff;
+                    }
+                }
+
+            }
+
+        }
+
+        .destFooter {
+            padding: 1rem;
+
+            .number {
+                font-size: 2rem;
+                font-weight: 600;
+                color: #000;
+                position: relative;
+                width: max-content;
+            }
+
+
+            .destText {
+                justify-content: space-between;
+
+                h6 {
+                    color: #000;
+                    font-size: 1rem;
+                }
+
+                flex {
+                    font-size: 16px;
+                    font-weight: 600;
+                    align-items: flex-start;
+                    transform: translateY(5px);
+
+                }
+
+                .icon {
+                    color: rgb(255, 119, 0);
+                }
+
+
+            }
+        }
+
+
+
+        &:hover {
+            .overlayInfo {
+                overflow: visible;
+                padding: 1rem 1.5rem;
+                height: 100%;
+
+            }
+
+        }
+
+    }
+}
+
+
+
+@media screen and (min-width:480px) {
+    .popular {
+        padding-top: 10rem;
+    }
+}
+
+@media screen and (min-width:556px) {
+    .popular {
+        .secContainer {
+            .secHeader {
+                width: 100%;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                .textDiv {
+                    text-align: start;
+                    max-width: 70%;
+                }
+
+                .iconsDiv {
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:720px) {
+    .popular {
+        padding-top: 7rem;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .popular {
+        padding-top: 10rem;
+
+        .secContainer {
+            .secHeader {
+                .iconsDiv {
+                    position: absolute;
+                    right: 5rem;
+
+                }
+
+                .textDiv {
+                    .secTitle {
+                        font-size: 2.2rem;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .mainContent {
+                grid-template-columns: repeat(4, 1fr);
+
+            }
+        }
+    }
+
+}

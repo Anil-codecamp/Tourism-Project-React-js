@@ -1,0 +1,142 @@
+.offer {
+    .secContainer {
+        .secIntro {
+            .secTitle {
+                font-size: 2rem;
+                margin-top: 2rem;
+                margin-bottom: 1.3rem;
+                // p{
+                //     font-size: 2rem;
+                // }
+
+            }
+            p{
+                
+                font-size:1.3rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .mainContent {
+            gap: 1rem;
+
+            .singleOffer {
+                border-radius: 1rem;
+                overflow: hidden;
+                padding: 0.5rem;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+                .icon {
+                    font-size: 20px;
+
+                }
+
+                small {
+                    font-weight: 500;
+
+                }
+
+                .destImage {
+                    position: relative;
+                    height: 30vh;
+                    width: 100%;
+                    border-radius: 1rem;
+                    overflow: hidden;
+
+                    img {
+                        height: 100%;
+
+
+                    }
+
+                    .discount {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        padding: 5px 10px;
+                        background-color: rgb(255, 119, 0);
+                        border-radius: 1rem;
+                        font-size: 0.8rem;
+                        font-weight: 600;
+                        color: #fff;
+                    }
+
+                }
+
+                .offerBody {
+                    padding: 1rem;
+
+                    .price {
+                        justify-content: space-between;
+
+                        h4 {
+                            color: #000;
+                            font-weight: 700;
+                            font-size: 1rem;
+
+
+                        }
+
+                        .status {
+                            padding: 5px 10px;
+                            color: red;
+                            font-weight: 600;
+                            background-color: rgb(209, 199, 199);
+                            font-size: .9rem;
+                            border-radius: 2rem;
+                            cursor: pointer;
+                        }
+
+                    }
+                }
+
+                &:hover {
+                    transform: translateY(-4px);
+                    transition: .3s;
+
+
+                }
+
+
+                .amenities {
+                    width: 100%;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    padding: 1rem 0;
+                    gap: .8rem 5.6rem;
+
+                    .singleAmenity {
+                        padding: .4rem;
+                        gap: 1rem;
+                        justify-content: center;
+                        text-align: center;
+                        margin: auto;
+                        width: 100%;
+                        background-color: rgb(236, 234, 234);
+                    }
+
+                }
+
+                .btn {
+                    margin-top: 1rem;
+                    width: 100%;
+                    text-align: center;
+                    justify-content: center;
+                    padding: .6rem;
+                    color: #fff;
+                    font-weight: 600;
+                    gap: .5rem;
+                    background-color: rgb(255, 119, 0);
+
+                    .icon {
+                        color: #fff;
+                        font-weight: 800;
+                        font-size: 1.5rem;
+
+                    }
+                }
+
+            }
+        }
+    }
+}

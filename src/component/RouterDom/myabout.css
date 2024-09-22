@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    height: 70vh;
+    background-image:linear-gradient(rgba(33,33,33,0.522),rgba(33,33,33,0.522)),url("../../../public/images/c.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin: auto;
+
+    
+    position: relative;
+}
+.heroSection .Title{
+    text-align: center;
+}
+
+.heroSection  .Title h1{
+    font-size: 3rem;
+
+}
+.heroSection  .Title a{
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+.heroSection  .Title span{
+    margin-left: 2rem;
+    font-size: 1.2rem;
+}
+
+/* Content */
+
+.container{
+    text-align: center;
+    margin-top: 5rem;
+   
+}
+.container .title h2{
+    color: rgb(192, 7, 7);
+    font-size: 2rem;
+    font-weight: 600;
+    
+}
+.container .title h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    
+}
+
+.container .content{
+    display: flex;
+    margin: 4rem;
+    gap: 10rem;
+
+}
+
+.content .mycontent p {
+    margin-top: 3rem;
+    line-height: 2rem;
+    text-align: start;
+    font-size: 1.1rem;
+
+
+
+}
+ .imageContent{
+    display: flex;
+    gap: 2rem;
+    
+}
+.content .small{
+    width: 10rem;
+    margin-left: 2rem;
+    height: 3px;
+    margin-top: 2rem;
+    background-color: rgb(7, 0, 196);
+      
+}
+
+.imageContent .imageContent1 img{
+    height: 350px;
+    width: 400px;
+    margin: 2px;
+    
+}
+
+.imageContent .imageContent2 img{
+    height: 550px; 
+    width: 450px;
+}
+.imageContent .imageContent2{
+    margin-top: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+.imageContent img{
+    height: 450px;
+    width: 500px;
+    border-radius: 2px;
+}
+.imageContent h2{
+    margin-top: 1rem;
+    line-height: 2rem;
+}
+
+.mycontent button{
+    margin-top: 2rem;
+    
+}

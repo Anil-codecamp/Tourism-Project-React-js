@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.overlay{
+    width:150rem;
+    height: 100rem; 
+    position:fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .activeOverlay{
+    display:block;
+  }
+  
+  
+  /* showModalDiv */
+  .showModalDiv{
+    width: 400px;
+    height: 300px;
+    position: fixed;
+    left: 50%;
+    top: -500px;
+    transition: 0.5s;
+    transform: translate(-50%,-50%);
+  
+  
+  }
+  .showModalDiv h1{
+    text-align: center;
+    margin-top: 3vh;
+    color: #fff;
+  }
+  .activeModaldiv{
+    top: 50%;
+  }
+  
+  .showModalDiv h1 span{
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+  }
+
+
+  /* booking */
+  .overlay1{
+    width:150rem;
+    height: 100rem; 
+    position:fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+  }
+  .activeOverlay1{
+    display:block;
+  }
+
+
+ 

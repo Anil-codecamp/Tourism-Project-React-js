@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+   
+    
+} 
+
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.section{
+    padding: 4rem 0 2rem;
+
+}
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.icon{
+    font-size: 2rem;
+    cursor: pointer;
+    
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    align-items: center;
+}
+.btn{
+    padding: 0.4rem 1.5rem;
+    background: #303030;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    cursor: pointer;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn a{
+    color: #fff;
+    font-weight: 500;
+}
+.btn:hover{
+    background-color: rgb(43, 42, 40);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.secIntro{
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto 2rem;
+
+}
+.secIntro .secTitle{
+    color: #000;
+    line-height: 1.5rem;
+    padding-bottom: 0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.secIntro p{
+    font-size: 13px;
+    color: #000;
+    font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
+img,video{
+    width: 100%;
+    height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input{
+    font-size: 100%;
+
+}
+
+@media  screen and (min-width:556px) {
+    .mainContent,.singlePost{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+@media  screen and (min-width:884px) {
+    .mainContent{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
 }

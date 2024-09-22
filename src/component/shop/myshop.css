@@ -1,0 +1,110 @@
+
+.advent {
+    text-align: center;
+    margin-top: 10rem;
+}
+.advent h2{
+    font-size: 1.5rem;
+    color: red;
+    font-weight: 500;
+}
+.advent h1{
+    font-size: 2.2rem;
+    color: #000;
+    font-weight: 700;
+}
+.adventure{
+    height: 70vh;
+    background-image:linear-gradient(rgba(33,33,33,0.522),rgba(33,33,33,0.522)),url("../../../public/images/shop/shop1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin: auto;
+    position:relative;
+    
+   
+}
+.adventSection .Title{
+    text-align: center;
+}
+
+.adventSection .Title h1{
+    font-size: 3rem;
+
+}
+.adventSection .Title a{
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+.adventSection .Title span{
+    margin-left: 2rem;
+    font-size: 1.2rem;
+}
+
+
+.shop-container{
+    width: 90%;
+    display: grid;
+    margin: auto;
+    text-align: center;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+    
+}
+.product-image{
+    margin-top: 5rem;
+   
+}
+.product-container{
+    border: none;
+    margin: 2rem;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #000;
+
+    
+
+}
+.product-image img{
+    width: 300px;
+    height: 300px; 
+    cursor: pointer;
+   
+   
+}
+.product-image img:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+.content{
+    margin-bottom: 1rem;
+}
+
+.content h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+
+}
+.content h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.content h1:hover{
+    color: rgb(228, 105, 4);
+    transition: .4s;
+    font-weight: 700;
+}
+
+
+
+

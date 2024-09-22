@@ -1,0 +1,42 @@
+.myContact {
+    height: 70vh;
+    background-image: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)), url("../../../public/images/about2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin: auto;
+    position: relative;
+
+
+
+}
+
+.contactSection .Title {
+    text-align: center;
+}
+
+.contactSection .Title h1 {
+    font-size: 3rem;
+
+}
+
+.contactSection .Title a {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+.contactSection .Title span {
+    margin-left: 2rem;
+    font-size: 1.2rem;
+}
+
+.contact-inputs input {
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+}
