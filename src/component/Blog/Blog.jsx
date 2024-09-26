@@ -1,9 +1,9 @@
 import React from 'react'
-import './blog.css';
+
 import './blog.scss';
 import { BsArrowRightShort } from "react-icons/bs";
 import BlogApi from './BlogApi';
-import { HeroSectionApi } from '../HeroSection/HeroSectionApi';
+
 
 
 
@@ -24,7 +24,7 @@ const Blog = () => {
           {
             BlogApi.map(({id,image,title,description})=>{
               return(
-                <div className="singlePost grid">
+                <div className="singlePost grid" key={id}>
             <div className="imgDiv">
               <img src={image} alt="ImageName" />
             </div>

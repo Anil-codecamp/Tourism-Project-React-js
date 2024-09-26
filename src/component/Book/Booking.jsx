@@ -120,7 +120,7 @@ const Booking = () => {
         </select>
       </div>
 
-      <button type="submit" >Book</button>
+      <button type="submit" className='bg-blue-600 px-4 py-2 text-gray-50'>Book</button>
     
 
       

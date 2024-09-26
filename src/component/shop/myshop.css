@@ -81,7 +81,7 @@
 }
 .product-image img:hover{
     transform: scale(1.1);
-    transition: .5s;
+    transition: .5s ease-in-out;
 }
 .content{
     margin-bottom: 1rem;

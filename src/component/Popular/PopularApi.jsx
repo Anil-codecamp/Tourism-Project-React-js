@@ -5,7 +5,7 @@ const PopularApi=[
     image:"images/d.jpg",
     name:"Sarangkot",
     location:"Pokhara",
-    price:25,
+    price:1200,
     description:"Very testy resturant food ever in my life. Thank you Aone resturant for great food"
 },
 {
@@ -13,7 +13,7 @@ const PopularApi=[
     image:"./images/e.jpg",
     name:"Boating",
     location:"Mustang",
-    price:25,
+    price:1300,
     description:"Very testy resturant food ever in my life. Thank you Aone resturant for great food"
 },
 {
@@ -21,7 +21,7 @@ const PopularApi=[
     image:"../images/f.jpg",
     name:"Longest bridge",
     location:"Gandaki",
-    price:25,
+    price:1000,
     description:"Very testy resturant food ever in my life. Thank you Aone resturant for great food"
 },
 {
@@ -29,7 +29,7 @@ const PopularApi=[
     image:"../images/g.jpg",
     name:"Boating",
     location:"Pokhara",
-    price:25,
+    price:900,
     description:"Very testy resturant food ever in my life. Thank you Aone resturant for great food"
 },
 {
@@ -37,7 +37,7 @@ const PopularApi=[
     image:"images/h.jpg",
     name:"Rafting",
     location:"sun Koshi",
-    price:25,
+    price:1400,
     description:"Very testy resturant food ever in my life. Thank you Aone resturant for great food"
 },
 {
@@ -45,7 +45,7 @@ const PopularApi=[
     image:"images/i.jpg",
     name:"Adventure",
     location:"Nawalpur",
-    price:25,
+    price:1500,
     description:"Very testy resturant food ever in my life. Thank you Aone resturant for great food"
 },
 

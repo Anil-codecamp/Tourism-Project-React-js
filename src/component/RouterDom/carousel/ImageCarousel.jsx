@@ -27,14 +27,15 @@ function ImageCarousel() {
 
    </div>
     
-    <div className="slider-container" id="slider-boxes">
-      <Slider {...settings}>
+    <div className="bg-stone-300">
+    <div className="slider-container w-[90%] mx-auto" id="slider-boxes">
+      <Slider {...settings} >
       {
               ImageApi.map(({id,image,name,location})=>{
                 return(
                 <div className="myDestination" id="yourDestination">
-              <div className="destImage">
-                <img src={image} alt="Image title" />
+              <div className="destImage justify-evenly">
+                <img src={image} alt="Image title" className="mx-auto" />
 
                 <div className="overlayInfo">
                   <h3>{name}</h3>
@@ -60,6 +61,7 @@ function ImageCarousel() {
               )})
             }
       </Slider>
+    </div>
     </div>
     </>
   );

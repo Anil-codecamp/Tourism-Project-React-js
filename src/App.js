@@ -7,9 +7,12 @@ import AppLayout from './component/layout/AppLayout';
 import MyAbout from './component/RouterDom/MyAbout';
 import Contact1 from './component/RouterDom/Contact1';
 import Shop from './component/shop/Shop';
-import SingleProduct from './component/shop/SingleProduct';
-import Cart from './component/RouterDom/Cart';
+// import SingleProduct from './component/shop/SingleProduct';
+// import Cart from './component/RouterDom/Cart';
 import Cartpage from './component/shop/Cartpage';
+import DestinationDetails from './component/Popular/DestinationDetails';
+import Booking from './component/Book/Booking';
+
 
 
 
@@ -67,12 +70,12 @@ const App = () => {
           path: "/cart",
           element: <Cartpage/>
         },
-        
 
-        
-        
-
-        
+        {
+          path: "/destination/:id",
+          element: <DestinationDetails/>,
+         
+        },        
       
       ]
       

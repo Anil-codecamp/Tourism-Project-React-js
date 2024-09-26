@@ -22,8 +22,8 @@ const Cartpage = () => {
         <>
        
 
-            <div className="font-sans md:max-w-4xl max-md:max-w-xl min-w-full mx-auto bg-white py-4">
-                <div className="grid md:grid-cols-3 gap-7 mt-32">
+            <div className="font-sans md:max-w-4xl max-md:max-w-xl min-w-full mx-auto py-4 bg-slate-400">
+                <div className="grid md:grid-cols-3 gap-7 mt-44 mb-14">
                     <div className="md:col-span-2 bg-gray-100 p-4 rounded-md shadow-lg ml-4">
                         <h2 className="text-2xl font-bold text-gray-800">Cart</h2>
                         <hr className="border-gray-300 mt-4 mb-8" />
@@ -53,16 +53,16 @@ const Cartpage = () => {
                                                         </div>
 
                                                         <div>
-                                                            <button type="button"
-                                                                className="flex items-center px-3 py-1.4 border border-gray-300 text-gray-800 text-xs outline-none bg-transparent rounded-md">
+                                                            <div
+                                                                className="flex items-center px-3 py-1.4 border border-gray-300 text-gray-800 text-xs outline-none bg-transparent rounded-md cursor-pointer">
                                                                 <span className='text-[2rem] mb-2' onClick={() =>
                                                                     dispatch(decreaseItemQuantity(id))}>-</span>
 
-                                                                <span className="mx-2.5 text-2xl" >{quantity}</span>
+                                                                <span className="mx-2.5 text-2xl " >{quantity}</span>
 
                                                                 <span className='text-[1.8rem] mb-2' onClick={() =>
                                                                     dispatch(increaseItemQuantity(id))}>+</span>
-                                                            </button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>

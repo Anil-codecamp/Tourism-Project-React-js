@@ -1,5 +1,4 @@
 import React from 'react'
-import './about.css';
 import './about.scss';
 // import styles from './About.module.scss';
 

@@ -4,6 +4,7 @@ import { MdKingBed,MdBathroom,MdWifi,MdAirportShuttle,MdLocationOn } from "react
 import { BsArrowRight } from "react-icons/bs";
 import './offer.scss';
 import OfferApi from './OfferApi';
+import { NavLink } from 'react-router-dom';
 
 
 const Offer = () => {
@@ -18,9 +19,9 @@ const Offer = () => {
 
         <div className="mainContent grid">
           {
-            OfferApi.map(({image,location,price,off})=>{
+            OfferApi.map(({id,image,location,price,off})=>{
               return(
-                <div className="singleOffer">
+                <div className="singleOffer" key={id}>
             <div className="destImage">
               <img src={image} alt="Image" />
               <span className='discount'>{off} % off</span>
@@ -59,9 +60,10 @@ const Offer = () => {
               <small>{location}</small>
               </div>
 
-              <button className='btn flex'>View Details
+             <NavLink to="/contact"> <button className='btn flex'>More Details
               <BsArrowRight className='icon'/>
               </button>
+              </NavLink>
               
 
             </div>

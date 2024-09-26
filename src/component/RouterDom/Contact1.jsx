@@ -20,14 +20,14 @@ const Contact1 = () => {
     </section>
 
     <Wrapper>
-      <h2 className="common-heading">Contact Us</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.385157574532!2d84.40377637530062!3d27.70539197618366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994fb6fdfd935ed%3A0x29e6424f203a7aec!2sLUMBINI%20ICT%20CAMPUS!5e0!3m2!1sen!2snp!4v1712590880358!5m2!1sen!2snp" width="600" height="450" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+      <h2 className="common-heading text-2xl mb-8 ">Contact Us</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.385157574532!2d84.40377637530062!3d27.70539197618366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994fb6fdfd935ed%3A0x29e6424f203a7aec!2sLUMBINI%20ICT%20CAMPUS!5e0!3m2!1sen!2snp!4v1712590880358!5m2!1sen!2snp" width="600" height="450" style={{border:0}}  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='mx-auto'></iframe>
 
 
       <div className="container">
         <div className="contact-form">
           <form className="contact-inputs">
-            <h1>Get in touch</h1>
+            <h1 className='text-[2rem]'>Get in touch</h1>
             <input
               type="text"
               placeholder="username"
@@ -44,7 +44,7 @@ const Contact1 = () => {
               required
             />
 
-            <textarea
+            <textarea className='h-32'
               name="Message"
               cols="30"
               rows="10"

@@ -1,14 +1,15 @@
 import React from 'react'
-import './popular.css'
 import './popular.scss';
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import PopularApi from './PopularApi';
-import { NavLink } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 
 
 
 
 const Popular = () => {
+ 
+
 
   return (
     <>
@@ -32,14 +33,47 @@ const Popular = () => {
           </div>
 
           <div className="mainContent grid">
-            {
-              PopularApi.map(({ id, image, name, location }) => {
-                return (
-                  <div className="singleDestination">
-                    <div className="destImage" >
+          {
+            
+              PopularApi.map((product,id) => {
+                // const destination=getSingleDestination(product.title)
+                // console.log(destination);
+                
+                return(
+                
+                <PopularDestination product={product} key={id} />
+                )
+              })
+            }
+    
+            
+
+
+          </div>
+
+
+        </div>
+
+      </section>
+    </>
+  )
+}
+
+export default Popular
+
+
+function PopularDestination({product}){
+  const{id,name,image,location}=product
+
+  
+  
+  return(
+    <div className="singleDestination">
+     
+                   <NavLink to={`/destination/${id}`}>  <div className="destImage" >
                       <img src={image} alt="Image title" />
 
-                      <div className="overlayInfo">
+                     <div className="overlayInfo">
                         <h3>{name}</h3>
                         <p>{location}</p>
                         
@@ -47,6 +81,7 @@ const Popular = () => {
                       </div>
 
                     </div>
+                    </NavLink>
 
 
                     <div className="destFooter">
@@ -67,17 +102,5 @@ const Popular = () => {
                     </div>
                   </div>
 
-                )
-              })
-            }
-          </div>
-
-
-        </div>
-
-      </section>
-    </>
   )
 }
-
-export default Popular

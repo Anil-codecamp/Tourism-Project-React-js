@@ -1,0 +1,36 @@
+
+
+.adventure1{
+    height: 70vh;
+    background-image:linear-gradient(rgba(33,33,33,0.522),rgba(33,33,33,0.522)),url("../../../public/images/en5.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin: auto;
+    position:relative;
+    
+   
+}
+.adventSection .Title{
+    text-align: center;
+
+}
+
+.adventSection .Title h1{
+    font-size: 5rem;
+
+}
+.adventSection .Title a{
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+.adventSection .Title span{
+    margin-left: 2rem;
+    font-size: 1.2rem;
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import './footer.css';
+
 import './footer.scss';
 import { MdModeOfTravel } from "react-icons/md";
 import { FaFacebook, FaTwitter, FaInstagram, FaDiscord } from "react-icons/fa";

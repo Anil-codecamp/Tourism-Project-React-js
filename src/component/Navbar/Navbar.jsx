@@ -57,9 +57,9 @@ const Navbar = () => {
         <section className='navBarSection'>
           <div className={transparent}>
             <div className='logoDiv'>
-              <a href="/home" className='logo'>
+              <NavLink to="/" className='logo'>
                 <h1 className='flex'><MdOutlineModeOfTravel className='icon' />Ghumfir</h1>
-              </a>
+              </NavLink>
             </div>
             <div className={active}>
               <ul className='navLists flex'>
@@ -80,12 +80,12 @@ const Navbar = () => {
                 </li>
 
                 <li className='navItem'>
-                  <NavLink to="/cart" className='navLink'> <BsCart className='icon'/> <span className=' top-10 text-orange-400  text-[1.5rem] ml-7 absolute'>{totalQuantity}</span></NavLink>
+                  <NavLink to="/cart" className='navLink'> <BsCart className='icon'/> <span className=' top-10 text-white  text-[1.5rem] ml-7 absolute'>{totalQuantity}</span></NavLink>
                 </li>
 
 
 
-                {/* <div className="headerBtns flex"> */}
+                
                 <button className='btn loginBtn' onClick={() => setModalOverlay(true)}>
                   <NavLink to="#">Login</NavLink>
                 </button>
@@ -101,31 +101,11 @@ const Navbar = () => {
                   <Login/>
 
                 </div>
-
-
-
-
-                {/* booking portion */}
-
-                {/* <button className='btn signup'>
-                  <a href="#">Book</a>
-                </button> */}
-
-
-
+          
                 <button className='btn loginBtn' onClick={() => setModalOverlay1(true)}>
                   <NavLink to="#" onClick={() => setModalOverlay1(true)}>Book</NavLink>
                 </button>
-
                
-
-                
-                
-
-
-
-
-
 
                 {/* modaloverlay */}
 
@@ -138,7 +118,7 @@ const Navbar = () => {
                   <Booking/>
                 </div>
 
-                {/* <div/> */}
+               
               </ul>
 
               <div className='closeNavbar' onClick={removeNav}>

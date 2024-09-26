@@ -18,12 +18,12 @@ const Myshop = () => {
     </div>
     <div className="shop-container"> 
       {
-        items.map((curElm)=>{
+        items.map((curElm,id)=>{
           const {title,description,img,price}=curElm;
           return(
 
            
-            <div className="product-container">
+            <div className="product-container" key={id}>
               <div className="product-image">
                 <img src={img} alt=""/>
               </div>
