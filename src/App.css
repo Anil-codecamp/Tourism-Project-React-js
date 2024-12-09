@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-*{
+/* *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
      font-family: "Poppins", sans-serif;
    
     
-} 
+}  */
 
 
 a{
@@ -16,10 +16,10 @@ a{
 li{
     list-style: none;
 }
-.section{
+/* .section{
     padding: 4rem 0 2rem;
 
-}
+} */
 .container{
     padding-left: 1.5rem;
     padding-right: 1.5rem;

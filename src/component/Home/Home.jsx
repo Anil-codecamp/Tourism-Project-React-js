@@ -1,5 +1,4 @@
 import React from 'react'
-import './home.css';
 import './home.scss';
 import Popular from '../Popular/Popular';
 import Offer from '../Offers/Offer';
@@ -48,11 +47,11 @@ const Home = () => {
             </button>
           </div>
 
-          <div className="homeCard grid">
+          <div className="homeCard grid h-screen">
             <div className="locationDiv">
               <label htmlFor="location">Location</label>
-              {/* <input type="text"placeholder=' Dream Destination' /> */}
-              <select className='w-[250px] p-2 bg-gray-300 rounded-md'>
+              
+              <select className='w-full p-2 bg-gray-300 rounded-md '>
                 {
                   optionsLocation.map((option) => {
                     return (
@@ -69,7 +68,7 @@ const Home = () => {
 
             <div className="distDiv">
               <label htmlFor="distance">When?</label>
-              {/* <input type="text"placeholder=' 11/meters' /> */}
+              
               <select className='w-[250px] p-2 bg-gray-300 rounded-md'>
                 {
                   optionsWhen.map((options) => {
@@ -96,6 +95,9 @@ const Home = () => {
         </div>
 
       </section>
+      
+
+
       <Popular />
       <Myshop />
       <Offer />
