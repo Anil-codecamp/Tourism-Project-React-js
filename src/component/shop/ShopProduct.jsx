@@ -3,7 +3,7 @@ export const ShopProduct = [
     id: 1,
     title: "Bags & Packs",
     description: "Camping Bag",
-    price: 850,
+    price: 50,
     img:"images/shop/shop9.jpg",
     quantity:1,
 
@@ -13,7 +13,7 @@ export const ShopProduct = [
     id: 2,
     title: "Knives and tools",
     description: "Binocular",
-    price: 1400,
+    price: 60,
     img:"images/shop/shop2.jpg",
     quantity:1,
     
@@ -22,7 +22,7 @@ export const ShopProduct = [
     id: 3,
     title: "Knives & Tools",
     description: "Campers Knife",
-    price: 900,
+    price: 20,
     img:"images/shop/shop3.jpg",
     quantity:1,
     
@@ -32,7 +32,7 @@ export const ShopProduct = [
     id: 4,
     title: "Camp Kitchen",
     description: "Camp Cook Set",
-    price: 600,
+    price: 100,
     img:"images/shop/shop4.jpg",
     quantity:1,
     
@@ -42,7 +42,7 @@ export const ShopProduct = [
     id: 5,
     title: "Camp Clothes",
     description: "Camping Jacket",
-    price: 1000,
+    price: 80,
     img:"images/shop/shop5.jpg",
     quantity:1,
    
@@ -51,7 +51,7 @@ export const ShopProduct = [
     id: 6,
     title: "Bags & Packs",
     description: "Camping Bag",
-    price: 1200,
+    price: 90,
     img:"images/shop/shop6.jpg",
     quantity:1,
     
@@ -61,7 +61,7 @@ export const ShopProduct = [
     id: 7,
     title: "Lights & Lanterns",
     description: "Led Head Torch",
-    price: 1300,
+    price: 50,
     img:"images/shop/shop7.jpg",
     quantity:1,
     
@@ -70,7 +70,7 @@ export const ShopProduct = [
     id: 8,
     title: "Backpack Accessories",
     description: "Trekking Hat",
-    price: 700,
+    price: 70,
     img:"images/shop/shop8.jpg",
     quantity:1,
    
@@ -80,7 +80,7 @@ export const ShopProduct = [
     id: 9,
     title: "Bags & Packs",
     description: "Trekking Bag",
-    price: 800,
+    price: 80,
     img:"images/shop/shop9.jpg",
     quantity:1,
    

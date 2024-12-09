@@ -12,6 +12,7 @@ import Shop from './component/shop/Shop';
 import Cartpage from './component/shop/Cartpage';
 import DestinationDetails from './component/Popular/DestinationDetails';
 import Booking from './component/Book/Booking';
+import PlaceOrders from './component/Orders/PlaceOrders';
 
 
 
@@ -69,6 +70,10 @@ const App = () => {
         {
           path: "/cart",
           element: <Cartpage/>
+        },
+        {
+          path: "/place-order",
+          element: <PlaceOrders/>
         },
 
         {

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { NavLink } from 'react-router-dom'
-import { getCartTotal,increaseItemQuantity,removeItem,decreaseItemQuantity } from '../../features/cartslice'
+import { Link, NavLink } from 'react-router-dom'
+import { getCartTotal, increaseItemQuantity, removeItem, decreaseItemQuantity } from '../../features/cartslice'
 // import { decreaseItemQuantity, getCartTotal } from '../../features/cartSlice'
 //  import { getCartTotal, increaseItemQuantity, removeItem, decreaseItemQuantity } from '../features/cartslice'
 
@@ -9,7 +9,7 @@ import { getCartTotal,increaseItemQuantity,removeItem,decreaseItemQuantity } fro
 const Cartpage = () => {
     const { cart, totalQuantity, totalPrice } = useSelector((state) => state.allCart)
 
-   
+
 
     const dispatch = useDispatch();
 
@@ -20,7 +20,7 @@ const Cartpage = () => {
 
     return (
         <>
-       
+
 
             <div className="font-sans md:max-w-4xl max-md:max-w-xl min-w-full mx-auto py-4 bg-slate-400">
                 <div className="grid md:grid-cols-3 gap-7 mt-44 mb-14">
@@ -58,17 +58,19 @@ const Cartpage = () => {
                                                                 <span className='text-[2rem] mb-2' onClick={() =>
                                                                     dispatch(decreaseItemQuantity(id))}>-</span>
 
-                                                                <span className="mx-2.5 text-2xl " >{quantity}</span>
+
+                                                                <span className="mx-2.5 text-2xl" >{quantity}</span>
 
                                                                 <span className='text-[1.8rem] mb-2' onClick={() =>
                                                                     dispatch(increaseItemQuantity(id))}>+</span>
                                                             </div>
+
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="ml-auto">
-                                                <h4 className="text-base font-bold text-gray-800">Rs {price}</h4>
+                                                <h4 className="text-base font-bold text-gray-800">${price}</h4>
                                             </div>
                                         </div>
                                         <hr />
@@ -90,7 +92,7 @@ const Cartpage = () => {
                     </div>
 
 
-                    <div className="bg-gray-100 rounded-md p-4 lg:sticky top-0 mr-4 drop-shadow-lg">
+                    {/* <div className="bg-gray-100 rounded-md p-4 lg:sticky top-0 mr-4 drop-shadow-lg">
                     <div className="card-header py-3">
                   <h5 className="mb-0 text-2xl">Order Summary</h5>
                 </div>
@@ -98,22 +100,61 @@ const Cartpage = () => {
                         <ul className="text-gray-800 mt-8 space-y-4">
                             
                             <li className="flex flex-wrap gap-4 text-base">Total Quantity <span className="ml-auto font-bold">{totalQuantity}</span></li>
-                            <li className="flex flex-wrap gap-4 text-base font-bold">Total Price <span className="ml-auto">Rs {totalPrice}</span></li>
+                            <li className="flex flex-wrap gap-4 text-base font-bold">Total Price <span className="ml-auto">${totalPrice}</span></li>
                         </ul>
 
                         <div className="mt-8 space-y-2">
-                            <button type="button" className="text-sm px-4 py-2.5 w-full font-semibold tracking-wide bg-blue-600 hover:bg-blue-700 text-white rounded-md">Checkout</button>
+                            <Link to="/place-order">                            
+                          <button type="button" className="text-sm px-4 py-2.5 w-full font-semibold tracking-wide bg-blue-600 hover:bg-blue-700 text-white rounded-md">Checkout</button>
+                            </Link>
+
                             <button type="button" className="text-sm px-4 py-2.5 w-full font-semibold tracking-wide bg-transparent text-gray-800 border border-gray-300 rounded-md"><NavLink to="/shop">Continue Shopping</NavLink></button>
                         </div>
+                    </div> */}
+                    <div className="bg-gray-100 rounded-md p-4 lg:sticky top-0 mr-4 drop-shadow-lg">
+                    <OrderSummary />
+                    <div className="mt-8 space-y-2">
+                        <Link to="/place-order">
+                            <button type="button" className="text-sm px-4 py-2.5 w-full font-semibold tracking-wide bg-blue-600 hover:bg-blue-700 text-white rounded-md">Checkout</button>
+                        </Link>
+
+                        <button type="button" className="text-sm px-4 py-2.5 w-full font-semibold tracking-wide bg-transparent text-gray-800 border border-gray-300 rounded-md"><NavLink to="/shop">Continue Shopping</NavLink></button>
                     </div>
+                    </div>
+
                 </div>
             </div>
 
-            
-            
+
+
 
         </>
     )
 }
 
 export default Cartpage
+
+
+export function OrderSummary() {
+    const { totalQuantity, totalPrice } = useSelector((state) => state.allCart)
+
+    return (
+        <>
+        
+            <div className="card-header py-3">
+                <h5 className="mb-0 text-2xl">Order Summary</h5>
+            </div>
+
+            <ul className="text-gray-800 mt-8 space-y-4">
+
+                <li className="flex flex-wrap gap-4 text-base">Total Quantity <span className="ml-auto font-bold">{totalQuantity}</span></li>
+                <li className="flex flex-wrap gap-4 text-base font-bold">Total Price <span className="ml-auto">${totalPrice}</span></li>
+            </ul>
+            </>
+
+
+       
+    )
+
+
+}

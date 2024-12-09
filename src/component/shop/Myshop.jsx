@@ -30,7 +30,7 @@ const Myshop = () => {
               <div className="content">
                 <h2>{title}</h2>
                 <h1>{description}</h1>
-                <p>Rs {price}</p>
+                <p>${price}</p>
               </div>
               <button className={styles.button} onClick={()=>dispatch(addToCart(curElm))}>Add to cart</button>
             </div>
