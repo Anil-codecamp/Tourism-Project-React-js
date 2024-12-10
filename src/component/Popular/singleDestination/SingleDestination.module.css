@@ -37,6 +37,7 @@
   .bookingContainer form{
     margin: auto;
     margin-top: 10rem;
+    width: 40%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   }
@@ -79,4 +80,23 @@
   button:hover {
     background-color: #0056b3;
   }
+
+
+  @media screen and (min-width: 424px){
+    .bookingContainer form{
+      margin: auto;
+      margin-top: 10rem;
+      width: 50%;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   
+    }
+}
+@media screen and (min-width: 724px){
+  .bookingContainer form{
+    margin: auto;
+    margin-top: 10rem;
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  }
+}

@@ -96,8 +96,6 @@ const Home = () => {
 
       </section>
       
-
-
       <Popular />
       <Myshop />
       <Offer />

@@ -48,16 +48,7 @@
 }
 
 
-.shop-container{
-    width: 90%;
-    display: grid;
-    margin: auto;
-    text-align: center;
-    grid-template-columns: repeat(3,1fr);
-    margin-top: 4rem;
-    margin-bottom: 10rem;
-    
-}
+
 .product-image{
     margin-top: 5rem;
    

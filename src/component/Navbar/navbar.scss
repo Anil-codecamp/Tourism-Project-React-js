@@ -95,11 +95,7 @@
                             }
 
                         }
-                        .loginBtn{
-                            background: none;
-                            border: 1px solid red;
-
-                        }
+                        
                         .signup{
                             background: orange;
                             a{
@@ -115,7 +111,8 @@
                 .closeNavbar{
                     position:absolute;
                     top: 1rem;
-                    right: 7rem;
+                    right: 1rem;
+                    z-index: 999;
 
                     
                     

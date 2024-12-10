@@ -22,6 +22,7 @@ const Navbar = () => {
   const [active, setActive] = useState("navBar");
   const [modaloverlay, setModalOverlay] = useState(false);
   const [modaloverlay1, setModalOverlay1] = useState(false);
+ 
 
   const {cart,totalQuantity}=useSelector((state)=>state.allCart)
  const dispatch=useDispatch()
@@ -80,7 +81,7 @@ const Navbar = () => {
                 </li>
 
                 <li className='navItem'>
-                  <NavLink to="/cart" className='navLink'> <BsCart className='icon'/> <span className=' top-10 text-white  text-[1.5rem] ml-7 absolute'>{totalQuantity}</span></NavLink>
+                  <NavLink to="/cart" className='navLink'> <BsCart className='icon'/> <span className=' md:top-10 top-9 mt-56 ml-7 md:text-white md:mt-0 text-orange-600  text-[1.5rem] md:ml-7 absolute'>{totalQuantity}</span></NavLink>
                 </li>
 
 
@@ -102,7 +103,7 @@ const Navbar = () => {
 
                 </div>
           
-                <button className='btn loginBtn' onClick={() => setModalOverlay1(true)}>
+                <button className='bg-orange-600 text-white px-7 py-2 mt-3 m-2 rounded-3xl font-medium' onClick={() => setModalOverlay1(true)}>
                   <NavLink to="#" onClick={() => setModalOverlay1(true)}>Book</NavLink>
                 </button>
                
@@ -128,6 +129,7 @@ const Navbar = () => {
               <div className='toggleNavbar hideBar' onClick={showNav}>
                 <FaBarsStaggered className='icon' />
               </div>
+          
 
             </div>
           </div>

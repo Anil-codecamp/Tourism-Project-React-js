@@ -4,6 +4,8 @@
             .secTitle {
                 font-size: 2rem;
                 margin-bottom: 1.3rem;
+                margin-top:4rem;
+                color: red;
                 // p{
                 //     font-size: 2rem;
                 // }
@@ -11,8 +13,8 @@
             }
             p{
                 
-                font-size:1.3rem;
-                margin-bottom: 2rem;
+                font-size:1rem;
+                margin-bottom: 2rem;    
             }
         }
 
@@ -44,6 +46,7 @@
 
                     img {
                         height: 100%;
+                        object-fit: cover;
 
 
                     }
